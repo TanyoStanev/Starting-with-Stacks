@@ -1,0 +1,23 @@
+using System;
+using System.Collections.Generic;
+namespace Start
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            string input=Console.ReadLine();
+            Stack<char> Fstack = new Stack<char>();
+            foreach (var item in input)
+            {
+                Fstack.Push(item);
+            }
+            while (Fstack.Count>0)
+            {
+                Console.Write(Fstack.Pop());
+            }
+            Console.WriteLine();
+        }
+    }
+}
+
